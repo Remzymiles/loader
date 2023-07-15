@@ -1,0 +1,32 @@
+:root {
+  --blue: #1f8fff;
+  --white: #ffffff;
+  --grey: #a1a1a1;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--blue);
+}
+div.loader {
+  height: 50px;
+  width: 50px;
+  border: 7px solid var(--grey);
+  border-top: 7px solid var(--white);
+  border-radius: 50%;
+  transition: all 1s;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
